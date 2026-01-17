@@ -9,9 +9,10 @@
   <!-- OGP -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="はじめてのピアノ選び相談会｜3/7(土)・8(日)" />
-  <meta property="og:description" content="まずは相談から。LINEで事前相談OK。登録後「ガイド希望」で専用ガイドURLをお送りします。" />
-  <!-- ▼ [画像差し替え目印] OGP画像を用意したらここに入れてください（例：images/ogp.jpg） -->
-  <meta property="og:image" content="images/ogp.png" />
+  <meta property="og:description" content="買う前に、少し立ち止まって。後悔しないために知っておいてほしいこと。LINE登録でガイドをご案内します。" />
+  <!-- ▼ [画像差し替え目印] OGP画像（例：/images/ogp.png）
+       ※OGPは「絶対URL（https://...）」が推奨ですが、ひとまず現状維持でOKです -->
+  <meta property="og:image" content="/images/ogp.png" />
   <meta property="og:locale" content="ja_JP" />
 
   <!--
@@ -57,14 +58,6 @@
     .brand{
       display:flex; align-items:center; gap:10px;
       min-width:0;
-    }
-    .logo{
-      width:34px; height:34px; border-radius:10px;
-      background:linear-gradient(135deg, rgba(22,163,74,.18), rgba(15,118,110,.18));
-      border:1px solid rgba(22,163,74,.25);
-      display:grid; place-items:center;
-      font-weight:700; color:var(--accent);
-      flex:0 0 auto;
     }
     .brand-title{
       font-weight:700; font-size:14px;
@@ -163,7 +156,6 @@
       font-size:13px;
     }
 
-    /* ▼ [画像差し替え目印] ヒーロー画像（任意） */
     .hero-image{
       margin:16px 0 0;
       width:100%;
@@ -270,7 +262,6 @@
       font-size:13px;
     }
 
-    /* Map embed responsiveness */
     .map-embed{
       width:100%;
       height:320px;
@@ -279,7 +270,6 @@
       display:block;
     }
 
-    /* Sticky bottom CTA (mobile) */
     .sticky-cta{
       position:fixed;
       left:0; right:0; bottom:0;
@@ -313,6 +303,14 @@
       font-size:12px;
       color:var(--muted);
       white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+
+    /* ▼ 追加：インセンティブ・セクションの背景（控えめ） */
+    .incentive{
+      background:
+        radial-gradient(900px 240px at 20% 0%, rgba(22,163,74,.08), transparent 60%),
+        radial-gradient(900px 240px at 80% 0%, rgba(15,118,110,.08), transparent 60%);
+      border-bottom:1px solid rgba(209,213,219,.6);
     }
 
     @media (max-width: 900px){
@@ -356,13 +354,13 @@
     <div class="wrap">
       <div class="topbar-inner">
         <div class="brand" aria-label="サイト名">
-          <!-- ▼ [画像差し替え目印] ロゴ画像を使うならここ：images/logo.png など -->
-          <!-- <img src="images/favicon.png" alt="株式会社トリイ" style="width:34px;height:34px;border-radius:10px;border:1px solid rgba(209,213,219,.7);"> -->
-          <div class="logo" aria-hidden="true">T</div>
+          <!-- ▼ [画像差し替え目印] ロゴ画像（例：images/favicon.png） -->
+          <img src="images/favicon.png" alt="株式会社トリイ" style="width:34px;height:34px;border-radius:10px;border:1px solid rgba(209,213,219,.7);">
           <div class="brand-title">株式会社トリイ｜3月ピアノ相談会</div>
         </div>
 
         <nav class="nav" aria-label="ページ内メニュー">
+          <a href="#incentive">ガイド（特典）</a>
           <a href="#about">相談会について</a>
           <a href="#worries">こんな方へ</a>
           <a href="#flow">LINE相談の流れ</a>
@@ -423,13 +421,12 @@
             相談に使える「専用ガイド（URL）」を、希望された方にお送りします（自動配布ではありません）。
           </p>
 
-          <!-- ▼ [画像差し替え目印] ヒーロー画像を置くならここ（例：images/hero.jpg） -->
-          <!--
+          <!-- ▼ ヒーロー画像（任意） -->
+          <!-- ▼ [画像差し替え目印] ヒーロー画像：images/hero.png など -->
           <figure class="hero-image" aria-label="相談会イメージ">
             <img src="images/hero.png" alt="はじめてのピアノ選び相談会">
             <figcaption class="cap">※画像はイメージです</figcaption>
           </figure>
-          -->
         </div>
 
         <aside class="card" id="worries" aria-label="こんな方のための相談会です">
@@ -450,6 +447,91 @@
             </div>
           </div>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▼ 追加：ヒーロー直下 インセンティブ（②ベース・柔らか版／説明→CTA） -->
+  <section class="incentive" id="incentive">
+    <div class="wrap">
+      <h2 class="section-title">
+        買う前に、少し立ち止まって。<br>
+        <span style="font-weight:900;">後悔しないために知っておいてほしいこと</span>
+      </h2>
+
+      <p class="muted" style="margin:0 0 14px;">
+        私たちが実際の相談で、最初に必ずお話ししている「後悔しないための5つの極意」をまとめました。
+      </p>
+
+      <!-- ▼ [画像差し替え目印] インセンティブ画像（例：images/incentive-5guides.png）
+           ※いったんダミー画像名にしています。後から差し替えてください -->
+    
+      <figure class="hero-image" aria-label="後悔しないピアノ選び 5つの極意（画像）">
+        <img src="images/インセンティブ.png" alt="後悔しないピアノ選び 5つの極意">
+        <figcaption class="cap">
+          ※内容のイメージです。配布はLINEで「ガイド希望」と送っていただいた方にご案内します。
+        </figcaption>
+      </figure>
+    
+
+      <div class="two" style="margin-top:14px;">
+        <div class="card">
+          <h3 style="margin-top:0;">このガイドで分かること</h3>
+          <ul class="list">
+            <li><span class="check" aria-hidden="true"></span><span>「何から考えればいいか」が整理できる</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>よくある後悔・失敗を事前に避けられる</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>ご家庭の状況に合う選び方が見えてくる</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>3月セールで「見るべきポイント」が分かる</span></li>
+          </ul>
+
+          <p class="note" style="margin-top:12px;">
+            ※このガイドは自動配布ではありません。<br>
+            LINE登録後、トークで <b>「ガイド希望」</b> と送っていただいた方にご案内します。
+          </p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:10px;">
+            <a class="btn btn-line"
+               href="https://lin.ee/FzFNFWA"
+               target="_blank" rel="noopener"
+               data-cta="line_incentive">
+              LINEで受け取る
+            </a>
+
+            <button class="btn btn-ghost" type="button" id="copyBtn2" data-cta="copy_guide_2">
+              「ガイド希望」をコピー
+            </button>
+            <span id="copyMsg2" class="note" style="display:none; margin:0;">コピーしました。LINEに貼り付けて送ってください。</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">ガイド内容（公開URL）</h3>
+          <p class="muted" style="margin-top:0;">
+            ※リンクは保持しています。LP内では「中身の透明性」を示す目的で掲載します。
+          </p>
+          <ul class="list">
+            <li><span class="check" aria-hidden="true"></span><span><a href="https://kens-pro.github.io/sasshi001/" target="_blank" rel="noopener">ピアノを用意する時の4つのポイント</a></span></li>
+            <li><span class="check" aria-hidden="true"></span><span><a href="https://kens-pro.github.io/humidai/" target="_blank" rel="noopener">ピアノが届いたら一番にして欲しいこと</a></span></li>
+            <li><span class="check" aria-hidden="true"></span><span><a href="https://kens-pro.github.io/okibasyo/" target="_blank" rel="noopener">置き場所選びマニュアル</a></span></li>
+            <li><span class="check" aria-hidden="true"></span><span><a href="https://kens-pro.github.io/sonota/" target="_blank" rel="noopener">本体以外にかかる経費</a></span></li>
+            <li><span class="check" aria-hidden="true"></span><span><a href="https://kens-pro.github.io/006denshivsaco/" target="_blank" rel="noopener">電子かアコースティックか</a></span></li>
+          </ul>
+
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-line"
+               href="https://lin.ee/FzFNFWA"
+               target="_blank" rel="noopener"
+               data-cta="line_incentive_2">
+              LINEで相談する
+            </a>
+            <a class="btn btn-tel"
+               href="tel:0740222063"
+               data-cta="tel_incentive"
+               aria-label="電話で相談（0740-22-2063）">
+              電話する
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -477,14 +559,12 @@
       </section>
 
       <!-- ▼ [画像差し替え目印] 途中に雰囲気写真を入れるならここ（例：images/piano-room.jpg） -->
-      <!--
       <section aria-label="画像セクション">
         <figure class="hero-image">
-          <img src="images/piano-room.jpg" alt="店内の雰囲気">
+          <img src="images/★店頭ピアノ画像001.jpg" alt="店内の雰囲気">
           <figcaption class="cap">店内で実物を見ながらご相談いただけます（※画像は例）</figcaption>
         </figure>
       </section>
-      -->
 
       <section id="flow">
         <h2 class="section-title">LINE相談の流れ（大切なご案内）</h2>
@@ -554,14 +634,12 @@
           </p>
 
           <!-- ▼ [画像差し替え目印] 実店舗の外観写真を入れるならここ（例：images/store.jpg） -->
-          <!--
           <div style="margin-top:14px;">
             <figure class="hero-image">
-              <img src="images/store.jpg" alt="株式会社トリイ 外観">
+              <img src="images/★店外観002jpeg.jpg" alt="株式会社トリイ 外観">
               <figcaption class="cap">会場：株式会社トリイ（滋賀県高島市今津町名小路1-1）</figcaption>
             </figure>
           </div>
-          -->
         </div>
       </section>
 
@@ -701,7 +779,7 @@
   </div>
 
   <script>
-    // 「ガイド希望」コピー
+    // 「ガイド希望」コピー（flowセクション）
     (function(){
       var btn = document.getElementById('copyBtn');
       var msg = document.getElementById('copyMsg');
@@ -725,8 +803,31 @@
       });
     })();
 
+    // 「ガイド希望」コピー（インセンティブ直下）
+    (function(){
+      var btn2 = document.getElementById('copyBtn2');
+      var msg2 = document.getElementById('copyMsg2');
+      if(!btn2) return;
+
+      btn2.addEventListener('click', async function(){
+        try{
+          await navigator.clipboard.writeText('ガイド希望');
+          msg2.style.display = 'inline';
+          setTimeout(function(){ msg2.style.display='none'; }, 2800);
+        }catch(e){
+          var ta = document.createElement('textarea');
+          ta.value = 'ガイド希望';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          msg2.style.display = 'inline';
+          setTimeout(function(){ msg2.style.display='none'; }, 2800);
+        }
+      });
+    })();
+
     // クリック計測用フック（任意）
-    // data-cta属性を拾って、GTM(dataLayer)またはGA4(gtag)に送れるようにしています。
     (function(){
       document.addEventListener('click', function(e){
         var el = e.target.closest('[data-cta]');
@@ -746,8 +847,8 @@
   <!--
     ▼ [画像差し替え目印] 画像の置き方メモ
     - imagesフォルダを index.html と同じ階層に作成
-    - 例：/images/hero.jpg, /images/store.jpg, /images/ogp.jpg
-    - 上のコメントアウト部分を外して src を差し替えるだけでOK
+    - 例：/images/hero.png, /images/favicon.png, /images/incentive-5guides.png, /images/ogp.png
+    - インセンティブ画像は「コメントアウト解除＋src差し替え」で反映できます
   -->
 </body>
 </html>
