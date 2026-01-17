@@ -451,7 +451,7 @@
     </div>
   </section>
 
-  <!-- ▼ 追加：ヒーロー直下 インセンティブ（②ベース・柔らか版／説明→CTA） -->
+  <!-- ▼ A案：URLはLPに直貼りしない（LINEでご案内） -->
   <section class="incentive" id="incentive">
     <div class="wrap">
       <h2 class="section-title">
@@ -460,19 +460,17 @@
       </h2>
 
       <p class="muted" style="margin:0 0 14px;">
-        私たちが実際の相談で、最初に必ずお話ししている「後悔しないための5つの極意」をまとめました。
+        私たちが実際の相談で、最初に必ずお話ししている「後悔しないための5つの極意」をまとめました。<br>
+        ※URLはLPに載せていません。登録後に<b>“読む順番つき”</b>でまとめてお送りします。
       </p>
 
-      <!-- ▼ [画像差し替え目印] インセンティブ画像（例：images/incentive-5guides.png）
-           ※いったんダミー画像名にしています。後から差し替えてください -->
-    
+      <!-- ▼ [画像差し替え目印] インセンティブ画像（後から差し替えOK） -->
       <figure class="hero-image" aria-label="後悔しないピアノ選び 5つの極意（画像）">
         <img src="images/インセンティブ.png" alt="後悔しないピアノ選び 5つの極意">
         <figcaption class="cap">
           ※内容のイメージです。配布はLINEで「ガイド希望」と送っていただいた方にご案内します。
         </figcaption>
       </figure>
-    
 
       <div class="two" style="margin-top:14px;">
         <div class="card">
@@ -502,7 +500,39 @@
             </button>
             <span id="copyMsg2" class="note" style="display:none; margin:0;">コピーしました。LINEに貼り付けて送ってください。</span>
           </div>
-        
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 10px;">ご相談はLINE上で完結します</h3>
+          <p class="muted" style="margin:0 0 10px;">
+            相談会という名前ですが、どこかに集まる「会」ではありません。<br>
+            LINEで状況を伺いながら、選び方を一緒に整理します。
+          </p>
+          <ul class="list">
+            <li><span class="check" aria-hidden="true"></span><span>まだ買うと決めていなくてもOK</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>置き場所・ご予算・目的に合わせて整理</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>3/7(土)・8(日)は店頭でセール同時開催（予告）</span></li>
+          </ul>
+
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-line"
+               href="https://lin.ee/FzFNFWA"
+               target="_blank" rel="noopener"
+               data-cta="line_incentive2">
+              LINEで相談する
+            </a>
+            <a class="btn btn-ghost"
+               href="tel:0740222063"
+               data-cta="tel_incentive"
+               aria-label="電話で相談（0740-22-2063）">
+              電話で相談
+            </a>
+          </div>
+
+          <p class="note" style="margin-top:10px;">
+            受付：10:30〜19:30（※月曜定休）
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -818,8 +848,7 @@
   <!--
     ▼ [画像差し替え目印] 画像の置き方メモ
     - imagesフォルダを index.html と同じ階層に作成
-    - 例：/images/hero.png, /images/favicon.png, /images/incentive-5guides.png, /images/ogp.png
-    - インセンティブ画像は「コメントアウト解除＋src差し替え」で反映できます
+    - 例：/images/hero.png, /images/favicon.png, /images/インセンティブ.png, /images/ogp.png
   -->
 </body>
 </html>
