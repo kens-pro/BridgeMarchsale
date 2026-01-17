@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>はじめてのピアノ選び相談会｜3/7(土)・8(日)｜株式会社トリイ</title>
+  <meta name="description" content="2026年3月7日(土)・8日(日)開催。はじめてのピアノ選び相談会（セール同時開催）。LINEで事前相談OK。登録後「ガイド希望」と送ると専用ガイドURLをお送りします。" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="はじめてのピアノ選び相談会｜3/7(土)・8(日)" />
+  <meta property="og:description" content="まずは相談から。LINEで事前相談OK。登録後「ガイド希望」で専用ガイドURLをお送りします。" />
+  <!-- ▼ [画像差し替え目印] OGP画像を用意したらここに入れてください（例：images/ogp.jpg） -->
+  <meta property="og:image" content="images/ogp.png" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <!--
+    ▼計測（任意）
+    - もしGTM/GA4を入れるなら、ここにスニペットを貼り付け。
+  -->
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --line:#d1d5db;
+      --card:#f9fafb;
+      --accent:#16a34a; /* LINE風グリーン */
+      --accent-2:#0f766e;
+      --shadow: 0 12px 30px rgba(0,0,0,.08);
+      --radius: 18px;
+      --max: 1080px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.7;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px;}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(1.2) blur(10px);
+      border-bottom:1px solid rgba(209,213,219,.6);
+    }
+    .topbar-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 0;
+      gap:12px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      min-width:0;
+    }
+    .logo{
+      width:34px; height:34px; border-radius:10px;
+      background:linear-gradient(135deg, rgba(22,163,74,.18), rgba(15,118,110,.18));
+      border:1px solid rgba(22,163,74,.25);
+      display:grid; place-items:center;
+      font-weight:700; color:var(--accent);
+      flex:0 0 auto;
+    }
+    .brand-title{
+      font-weight:700; font-size:14px;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+    .nav{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+    }
+    .nav a{
+      text-decoration:none;
+      color:var(--muted);
+      font-size:13px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid transparent;
+    }
+    .nav a:hover{border-color:rgba(209,213,219,.8); color:#111827; background:#fff;}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:14px 16px;
+      border-radius:999px;
+      border:1px solid transparent;
+      text-decoration:none;
+      font-weight:700;
+      letter-spacing:.02em;
+      cursor:pointer;
+      transition:transform .05s ease, box-shadow .2s ease, background .2s ease;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn-line{
+      background:var(--accent);
+      color:white;
+      box-shadow:0 10px 22px rgba(22,163,74,.18);
+    }
+    .btn-line:hover{background:#15803d}
+    .btn-ghost{
+      background:white;
+      border-color:rgba(209,213,219,.8);
+      color:#111827;
+    }
+    .btn-ghost:hover{background:#f3f4f6}
+
+    /* 追加：電話ボタン */
+    .btn-tel{
+      background:#111827;
+      color:#ffffff;
+      box-shadow:0 10px 22px rgba(17,24,39,.14);
+    }
+    .btn-tel:hover{background:#0b1220}
+
+    .hero{
+      padding:34px 0 22px;
+      background:
+        radial-gradient(1200px 340px at 15% 10%, rgba(22,163,74,.10), transparent 55%),
+        radial-gradient(1000px 340px at 85% 0%, rgba(15,118,110,.10), transparent 55%);
+      border-bottom:1px solid rgba(209,213,219,.6);
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(26px, 4.2vw, 44px);
+      line-height:1.2;
+      letter-spacing:-.01em;
+    }
+    .lead{
+      margin:0 0 14px;
+      font-size: clamp(15px, 2.2vw, 18px);
+      color:#111827;
+    }
+    .pillrow{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 18px;}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.72);
+      border:1px solid rgba(209,213,219,.75);
+      font-size:13px;
+      color:#111827;
+    }
+    .pill b{font-weight:800}
+
+    .hero-actions{
+      display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:14px 0 6px;
+    }
+    .note{
+      margin:8px 0 0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* ▼ [画像差し替え目印] ヒーロー画像（任意） */
+    .hero-image{
+      margin:16px 0 0;
+      width:100%;
+      border-radius: var(--radius);
+      border:1px solid rgba(209,213,219,.7);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      background:#fff;
+    }
+    .hero-image img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    .hero-image .cap{
+      padding:10px 12px;
+      font-size:12px;
+      color:var(--muted);
+      border-top:1px solid rgba(209,213,219,.6);
+      background: #ffffff;
+    }
+
+    .card{
+      background:white;
+      border:1px solid rgba(209,213,219,.7);
+      border-radius:var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+    .card h3{margin:0 0 10px; font-size:16px}
+    .list{
+      margin:0; padding:0; list-style:none;
+      display:grid; gap:10px;
+      color:#111827;
+      font-size:14px;
+    }
+    .list li{
+      display:flex; gap:10px; align-items:flex-start;
+      background:var(--card);
+      border:1px solid rgba(209,213,219,.6);
+      border-radius:14px;
+      padding:10px 12px;
+    }
+    .check{
+      width:18px; height:18px; border-radius:6px;
+      background:rgba(22,163,74,.14);
+      border:1px solid rgba(22,163,74,.28);
+      margin-top:2px;
+      flex:0 0 auto;
+    }
+
+    main{padding:26px 0 90px;}
+    section{padding:20px 0;}
+    .section-title{
+      font-size: clamp(18px, 2.4vw, 22px);
+      margin:0 0 12px;
+      letter-spacing:-.01em;
+    }
+    .muted{color:var(--muted)}
+    .two{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    .flow{
+      display:grid; gap:10px;
+      margin:0; padding:0; list-style:none;
+    }
+    .flow li{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:12px;
+      border:1px solid rgba(209,213,219,.7);
+      border-radius:16px;
+      background:white;
+    }
+    .step{
+      width:30px; height:30px; border-radius:12px;
+      display:grid; place-items:center;
+      font-weight:900;
+      color:white;
+      background:var(--accent-2);
+      flex:0 0 auto;
+    }
+    .flow b{font-weight:900}
+
+    .cta-band{
+      background: linear-gradient(135deg, rgba(22,163,74,.10), rgba(15,118,110,.10));
+      border:1px solid rgba(209,213,219,.6);
+      border-radius: var(--radius);
+      padding:18px;
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .cta-band .txt{max-width:680px}
+    .cta-band .txt p{margin:6px 0 0}
+
+    footer{
+      border-top:1px solid rgba(209,213,219,.6);
+      padding:16px 0 26px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Map embed responsiveness */
+    .map-embed{
+      width:100%;
+      height:320px;
+      border:0;
+      border-radius:16px;
+      display:block;
+    }
+
+    /* Sticky bottom CTA (mobile) */
+    .sticky-cta{
+      position:fixed;
+      left:0; right:0; bottom:0;
+      padding:10px 12px;
+      background:rgba(255,255,255,.92);
+      border-top:1px solid rgba(209,213,219,.7);
+      backdrop-filter:saturate(1.2) blur(10px);
+      z-index:60;
+      display:none;
+    }
+    .sticky-cta .inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .sticky-cta .inner .mini{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+    }
+    .sticky-cta .inner .mini .t{
+      font-weight:800;
+      font-size:13px;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+    .sticky-cta .inner .mini .s{
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns:1fr; }
+      .two{grid-template-columns:1fr;}
+    }
+    @media (max-width: 700px){
+      .nav{display:none;}
+      .sticky-cta{display:block;}
+      main{padding-bottom:132px;}
+      .btn{padding:12px 14px;}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "はじめてのピアノ選び相談会（3月ピアノセール同時開催）",
+    "startDate": "2026-03-07",
+    "endDate": "2026-03-08",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "株式会社トリイ",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "滋賀県",
+        "addressLocality": "高島市",
+        "streetAddress": "今津町名小路1-1",
+        "addressCountry": "JP"
+      }
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="topbar-inner">
+        <div class="brand" aria-label="サイト名">
+          <!-- ▼ [画像差し替え目印] ロゴ画像を使うならここ：images/logo.png など -->
+          <!-- <img src="images/favicon.png" alt="株式会社トリイ" style="width:34px;height:34px;border-radius:10px;border:1px solid rgba(209,213,219,.7);"> -->
+          <div class="logo" aria-hidden="true">T</div>
+          <div class="brand-title">株式会社トリイ｜3月ピアノ相談会</div>
+        </div>
+
+        <nav class="nav" aria-label="ページ内メニュー">
+          <a href="#about">相談会について</a>
+          <a href="#worries">こんな方へ</a>
+          <a href="#flow">LINE相談の流れ</a>
+          <a href="#access">会場</a>
+        </nav>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <a class="btn btn-ghost"
+             href="tel:0740222063"
+             data-cta="tel_top"
+             aria-label="電話で相談（0740-22-2063）">
+            電話
+          </a>
+          <a class="btn btn-line"
+             href="https://lin.ee/FzFNFWA"
+             target="_blank" rel="noopener"
+             data-cta="line_top">
+            LINEで相談する
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>はじめてのピアノ選び相談会</h1>
+          <p class="lead">
+            3月ピアノセールに向けて、まずは「相談」から始めませんか。<br />
+            <span class="muted">LINEで事前にご相談いただけます。まだ買うと決めていなくても大丈夫です。</span>
+          </p>
+
+          <div class="pillrow" aria-label="開催概要">
+            <div class="pill"><b>日程</b> 2026年3月7日（土）・8日（日）</div>
+            <div class="pill"><b>会場</b> 株式会社トリイ（滋賀県高島市今津町名小路1-1）</div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-line"
+               href="https://lin.ee/FzFNFWA"
+               target="_blank" rel="noopener"
+               data-cta="line_hero">
+              LINEで相談する
+            </a>
+            <a class="btn btn-ghost"
+               href="tel:0740222063"
+               data-cta="tel_hero"
+               aria-label="電話で相談（0740-22-2063）">
+              電話で相談
+            </a>
+            <a class="btn btn-ghost" href="#flow">「ガイド希望」の送り方を見る</a>
+          </div>
+
+          <p class="note">
+            ※LINE登録後、トーク画面で <b>「ガイド希望」</b> と一言送ってください。<br />
+            相談に使える「専用ガイド（URL）」を、希望された方にお送りします（自動配布ではありません）。
+          </p>
+
+          <!-- ▼ [画像差し替え目印] ヒーロー画像を置くならここ（例：images/hero.jpg） -->
+          <!--
+          <figure class="hero-image" aria-label="相談会イメージ">
+            <img src="images/hero.png" alt="はじめてのピアノ選び相談会">
+            <figcaption class="cap">※画像はイメージです</figcaption>
+          </figure>
+          -->
+        </div>
+
+        <aside class="card" id="worries" aria-label="こんな方のための相談会です">
+          <h3>こんな方のための相談会です</h3>
+          <ul class="list">
+            <li><span class="check" aria-hidden="true"></span><span>はじめてのピアノ選びで、何から考えればいいかわからない</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>子どもが続けられるか不安</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>価格帯や相場感がつかめない</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>中古と新品の違いがよくわからない</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>家に置けるか、音やサイズが心配</span></li>
+          </ul>
+
+          <div style="margin-top:14px; border-top:1px solid rgba(209,213,219,.6); padding-top:12px;">
+            <div style="font-weight:900; font-size:14px;">お電話でもご相談できます</div>
+            <div class="muted" style="margin-top:4px;">
+              <a href="tel:0740222063" style="font-weight:900; text-decoration:none;">0740-22-2063</a><br>
+              受付：10:30〜19:30（※月曜定休）
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+
+      <section id="about">
+        <h2 class="section-title">今回の相談会について</h2>
+        <div class="two">
+          <div class="card">
+            <p style="margin:0;">
+              この相談会は、<b>無理に購入をおすすめする場ではありません。</b><br />
+              何を基準に選べばよいか／今すぐ必要なのか、少し先でよいのか／ご家庭の状況に合っているか——
+              そうした点を一緒に整理するための時間です。
+            </p>
+          </div>
+          <div class="card">
+            <p style="margin:0;">
+              3月7日・8日の2日間は、店頭でピアノセールも同時開催予定です。<br />
+              <span class="muted">※価格・台数・内容の詳細は、事前にLINEでご相談いただいた方へ個別にご案内しています。</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ▼ [画像差し替え目印] 途中に雰囲気写真を入れるならここ（例：images/piano-room.jpg） -->
+      <!--
+      <section aria-label="画像セクション">
+        <figure class="hero-image">
+          <img src="images/piano-room.jpg" alt="店内の雰囲気">
+          <figcaption class="cap">店内で実物を見ながらご相談いただけます（※画像は例）</figcaption>
+        </figure>
+      </section>
+      -->
+
+      <section id="flow">
+        <h2 class="section-title">LINE相談の流れ（大切なご案内）</h2>
+        <div class="two">
+          <div class="card">
+            <ol class="flow">
+              <li>
+                <div class="step">1</div>
+                <div>
+                  <b>下のボタンからLINEに登録</b><br />
+                  <span class="muted">（外部サイト：LINEが開きます）</span>
+                </div>
+              </li>
+              <li>
+                <div class="step">2</div>
+                <div>
+                  <b>トーク画面で「ガイド希望」と一言送信</b><br />
+                  <span class="muted">自動配布ではありません。相談をご希望の方だけにお渡ししています。</span>
+                </div>
+              </li>
+              <li>
+                <div class="step">3</div>
+                <div>
+                  <b>専用ガイド（URL）をお送りします</b><br />
+                  <span class="muted">そのまま相談も続けられます（不安整理だけでもOK）。</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 10px;">「ガイド希望」送信用のコピーボタン</h3>
+            <p class="muted" style="margin:0 0 10px;">下のボタンで文言をコピーできます。LINEで貼り付けて送ってください。</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+              <button class="btn btn-ghost" type="button" id="copyBtn" data-cta="copy_guide">
+                「ガイド希望」をコピー
+              </button>
+              <a class="btn btn-line"
+                 href="https://lin.ee/FzFNFWA"
+                 target="_blank" rel="noopener"
+                 data-cta="line_flow">
+                LINEで相談する
+              </a>
+              <a class="btn btn-tel"
+                 href="tel:0740222063"
+                 data-cta="tel_flow"
+                 aria-label="電話で相談（0740-22-2063）">
+                電話する
+              </a>
+            </div>
+            <p id="copyMsg" class="note" style="display:none; margin-top:10px;">コピーしました。LINEのトークに貼り付けて送ってください。</p>
+
+            <div style="margin-top:10px;" class="muted">
+              受付：10:30〜19:30（※月曜定休）
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-us">
+        <h2 class="section-title">私たちについて</h2>
+        <div class="card">
+          <p style="margin:0;">
+            株式会社トリイは、地域で長く音楽に関わってきた楽器店です。<br />
+            ピアノの販売・調整・アフター対応に加え、お子さまの音楽教育のサポートにも取り組んでいます。<br />
+            <b>「買って終わり」ではなく、その後のことまで見据えて</b>お話しします。
+          </p>
+
+          <!-- ▼ [画像差し替え目印] 実店舗の外観写真を入れるならここ（例：images/store.jpg） -->
+          <!--
+          <div style="margin-top:14px;">
+            <figure class="hero-image">
+              <img src="images/store.jpg" alt="株式会社トリイ 外観">
+              <figcaption class="cap">会場：株式会社トリイ（滋賀県高島市今津町名小路1-1）</figcaption>
+            </figure>
+          </div>
+          -->
+        </div>
+      </section>
+
+      <section id="access">
+        <h2 class="section-title">会場</h2>
+        <div class="two">
+          <div class="card">
+            <p style="margin:0 0 8px;"><b>株式会社トリイ</b></p>
+            <p class="muted" style="margin:0 0 8px;">滋賀県高島市今津町名小路1-1</p>
+            <p class="muted" style="margin:0 0 12px;">
+              お電話：<a href="tel:0740222063" style="font-weight:900; text-decoration:none;">0740-22-2063</a><br>
+              受付：10:30〜19:30（※月曜定休）
+            </p>
+
+            <iframe
+              class="map-embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.266314388073!2d136.02897731223666!3d35.398648872565744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001923b40e6c505%3A0x86f95997ab3ee154!2z77yI5qCq77yJ44OI44Oq44Kk5LuK5rSl5pys5bqX!5e0!3m2!1sja!2sjp!4v1768627956827!5m2!1sja!2sjp"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-ghost"
+                 href="https://maps.app.goo.gl/zYjcp7pCpRJfsSQw9"
+                 target="_blank" rel="noopener"
+                 data-cta="map_open">
+                Googleマップで開く
+              </a>
+              <a class="btn btn-tel"
+                 href="tel:0740222063"
+                 data-cta="tel_access"
+                 aria-label="電話で相談（0740-22-2063）">
+                電話する
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 10px;">最後に</h3>
+            <p style="margin:0;">
+              まだ何も決まっていない段階でも構いません。<br />
+              はじめての一歩として、LINEでの事前相談をご利用ください。
+            </p>
+
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-line"
+                 href="https://lin.ee/FzFNFWA"
+                 target="_blank" rel="noopener"
+                 data-cta="line_bottom">
+                LINEで相談する
+              </a>
+              <a class="btn btn-ghost"
+                 href="tel:0740222063"
+                 data-cta="tel_bottom"
+                 aria-label="電話で相談（0740-22-2063）">
+                電話で相談
+              </a>
+            </div>
+
+            <p class="note" style="margin-top:10px;">
+              受付：10:30〜19:30（※月曜定休）
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="CTA">
+        <div class="cta-band">
+          <div class="txt">
+            <div style="font-weight:900; font-size:16px;">LINE登録後、「ガイド希望」と送ってください</div>
+            <p class="muted">専用ガイド（URL）をお送りします。自動配布ではありません。</p>
+            <p class="muted" style="margin-top:6px;">お電話：0740-22-2063（10:30〜19:30／月曜定休）</p>
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-line"
+               href="https://lin.ee/FzFNFWA"
+               target="_blank" rel="noopener"
+               data-cta="line_band">
+              LINEで相談する
+            </a>
+            <a class="btn btn-tel"
+               href="tel:0740222063"
+               data-cta="tel_band"
+               aria-label="電話で相談（0740-22-2063）">
+              電話する
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© 株式会社トリイ</div>
+
+      <div style="margin-top:10px;">
+        <span class="muted">
+          お電話でのご相談：<a href="tel:0740222063">0740-22-2063</a>
+          （10:30〜19:30／月曜定休）
+        </span>
+      </div>
+
+      <div style="margin-top:6px;">
+        <span class="muted">※本ページは相談導線のための案内です。価格・在庫などの詳細はLINEで個別にご案内します。</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="sticky-cta" role="region" aria-label="LINE・電話相談（固定ボタン）">
+    <div class="inner">
+      <div class="mini">
+        <div class="t">はじめてのピアノ選び相談会</div>
+        <div class="s">3/7(土)・8(日)｜事前相談OK</div>
+      </div>
+
+      <div style="display:flex; gap:8px;">
+        <a class="btn btn-ghost"
+           href="tel:0740222063"
+           data-cta="tel_sticky"
+           aria-label="電話で相談（0740-22-2063）">
+          電話
+        </a>
+
+        <a class="btn btn-line"
+           href="https://lin.ee/FzFNFWA"
+           target="_blank" rel="noopener"
+           data-cta="line_sticky">
+          LINE
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 「ガイド希望」コピー
+    (function(){
+      var btn = document.getElementById('copyBtn');
+      var msg = document.getElementById('copyMsg');
+      if(!btn) return;
+
+      btn.addEventListener('click', async function(){
+        try{
+          await navigator.clipboard.writeText('ガイド希望');
+          msg.style.display = 'block';
+          setTimeout(function(){ msg.style.display='none'; }, 2800);
+        }catch(e){
+          var ta = document.createElement('textarea');
+          ta.value = 'ガイド希望';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          msg.style.display = 'block';
+          setTimeout(function(){ msg.style.display='none'; }, 2800);
+        }
+      });
+    })();
+
+    // クリック計測用フック（任意）
+    // data-cta属性を拾って、GTM(dataLayer)またはGA4(gtag)に送れるようにしています。
+    (function(){
+      document.addEventListener('click', function(e){
+        var el = e.target.closest('[data-cta]');
+        if(!el) return;
+        var name = el.getAttribute('data-cta');
+
+        if(window.dataLayer && typeof window.dataLayer.push === 'function'){
+          window.dataLayer.push({ event: 'lp_cta_click', cta_name: name });
+        }
+        if(typeof window.gtag === 'function'){
+          window.gtag('event', 'lp_cta_click', { cta_name: name });
+        }
+      }, { passive:true });
+    })();
+  </script>
+
+  <!--
+    ▼ [画像差し替え目印] 画像の置き方メモ
+    - imagesフォルダを index.html と同じ階層に作成
+    - 例：/images/hero.jpg, /images/store.jpg, /images/ogp.jpg
+    - 上のコメントアウト部分を外して src を差し替えるだけでOK
+  -->
+</body>
+</html>
